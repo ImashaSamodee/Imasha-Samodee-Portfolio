@@ -62,7 +62,11 @@ import {
   SiApachemaven,
   SiMaterialdesign,
   SiJsonwebtokens,
-  SiVite
+  SiVite,
+  SiSqlite,
+  SiNetlify,
+  SiReactrouter,
+  SiJest
 } from 'react-icons/si'
 import { TbApi } from 'react-icons/tb'
 import { FaProjectDiagram } from 'react-icons/fa'
@@ -76,6 +80,7 @@ import project04 from "./project-04.png"
 import project05 from "./project-05.png"
 import project06 from "./project-06.png"
 import project07 from "./project-07.png"
+import project08 from "./project-08.png"
 
 export const assets = {
   profileImg,
@@ -129,6 +134,7 @@ export const skillsData = [
       { name: 'React', icon: SiReact, color: '#61DAFB' },
       { name: 'JavaScript ES6+', icon: SiJavascript, color: '#F7DF1E' },
       { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4' },
+      { name: 'React Router', icon: SiReactrouter, color: '#CA4245' },
       { name: 'Bootstrap 5', icon: SiBootstrap, color: '#7952B3' },
       { name: 'HTML5', icon: SiHtml5, color: '#E34F26' },
       { name: 'CSS3', icon: SiCss3, color: '#1572B6' },
@@ -142,13 +148,15 @@ export const skillsData = [
     icon: FaServer,
     description: 'Enterprise server frameworks, secure RESTful APIs, and authentication mechanisms.',
     skills: [
+      { name: 'Node.js', icon: SiNodedotjs, color: '#339933' },
+      { name: 'Express.js', icon: SiExpress, color: '#000000' },
       { name: 'Java', icon: FaJava, color: '#EA2D2E' },
       { name: 'Spring Boot 3', icon: SiSpringboot, color: '#6DB33F' },
       { name: 'Spring Security', icon: SiSpring, color: '#6DB33F' },
-      { name: 'Hibernate & JPA', icon: SiHibernate, color: '#59666C' },
       { name: 'PHP 8.x', icon: SiPhp, color: '#777BB4' },
       { name: 'REST APIs', icon: TbApi, color: '#0284C7' },
       { name: 'JWT & BCrypt', icon: SiJsonwebtokens, color: '#D63AFF' },
+      { name: 'TCP Sockets', icon: FaNetworkWired, color: '#0284C7' },
       { name: 'Apache Server', icon: SiApache, color: '#D22128' },
     ]
   },
@@ -156,11 +164,12 @@ export const skillsData = [
     category: 'Mobile & AI',
     title: 'Mobile & AI Integration',
     icon: FaMobile,
-    description: 'Cross-platform mobile applications, Google Gemini Vision AI, and intelligent prescription analysis.',
+    description: 'Cross-platform mobile applications, Google Gemini AI, and intelligent prescription analysis.',
     skills: [
       { name: 'Flutter', icon: SiFlutter, color: '#02569B' },
       { name: 'Dart', icon: SiDart, color: '#0175C2' },
-      { name: 'Gemini Vision AI', icon: SiGooglegemini, color: '#4E88D4' },
+      { name: 'Google Gemini AI', icon: SiGooglegemini, color: '#4E88D4' },
+      { name: 'Gemini Vision AI', icon: SiGooglegemini, color: '#1A73E8' },
       { name: 'Material Design 3', icon: SiMaterialdesign, color: '#757575' },
       { name: 'Prescription AI OCR', icon: FaRobot, color: '#8B5CF6' },
       { name: 'Android', icon: SiAndroid, color: '#3DDC84' },
@@ -175,8 +184,9 @@ export const skillsData = [
       { name: 'PostgreSQL', icon: SiPostgresql, color: '#4169E1' },
       { name: 'Supabase', icon: SiSupabase, color: '#3ECF8E' },
       { name: 'MySQL', icon: SiMysql, color: '#4479A1' },
+      { name: 'SQLite', icon: SiSqlite, color: '#003B57' },
       { name: 'MariaDB', icon: SiMariadb, color: '#003545' },
-      { name: 'Spring Data JPA', icon: SiSpring, color: '#6DB33F' },
+      { name: 'Hibernate & JPA', icon: SiHibernate, color: '#59666C' },
       { name: 'Database Design', icon: FaDatabase, color: '#0D9488' },
     ]
   },
@@ -188,9 +198,11 @@ export const skillsData = [
     skills: [
       { name: 'Git', icon: SiGit, color: '#F05032' },
       { name: 'GitHub', icon: SiGithub, color: '#181717' },
+      { name: 'Netlify', icon: SiNetlify, color: '#00C7B7' },
+      { name: 'Vite', icon: SiVite, color: '#646CFF' },
       { name: 'Postman', icon: SiPostman, color: '#FF6C37' },
       { name: 'Apache Maven', icon: SiApachemaven, color: '#C71A36' },
-      { name: 'Vite', icon: SiVite, color: '#646CFF' },
+      { name: 'Jest', icon: SiJest, color: '#C21325' },
       { name: 'XAMPP', icon: SiXampp, color: '#FB7A24' },
       { name: 'VS Code', icon: FaLaptopCode, color: '#007ACC' },
     ]
@@ -374,6 +386,58 @@ export const projectData = [
       "Developed an interactive Java desktop game combining Swing-based UI design, AI gameplay, TCP socket multiplayer, real-time chat, animated Christmas victory effects, audio integration, countdown-based turn management, and persistent SQLite leaderboard statistics.",
     demo: "",
     code: "https://github.com/ImashaSamodee/Kids-Play-With-Santa-Tic-Tac-Toe-Chat.git"
+  },
+  {
+    id: "velora-luxury-store",
+    title: "VELORA – Luxury Fashion & Lifestyle Store",
+    description: "A modern, responsive luxury fashion e-commerce website featuring premium product collections, category-based shopping, product details, a dynamic shopping cart, and authentication pages.",
+    longDescription: "VELORA is a luxury fashion and lifestyle e-commerce frontend built with React 19. The platform offers a premium shopping experience with dedicated collections for men, women, and kids, along with new arrivals, sale items, product galleries, size selection, product descriptions, and related-product suggestions. The shopping cart supports adding and removing products, adjusting quantities, and calculating totals through React Context API. Login and signup interfaces, breadcrumb navigation, promotional banners, popular collections, and newsletter subscription UI enhance the shopping experience. React Router DOM enables smooth client-side navigation, while responsive CSS layouts support desktop, tablet, and mobile devices. The project is deployed on Netlify.",
+    image: project08,
+    tech: [
+      "React 19",
+      "JavaScript ES6+",
+      "CSS3",
+      "React Router DOM 7",
+      "React Context API",
+      "HTML5",
+      "React Scripts",
+      "Create React App",
+      "React Testing Library",
+      "Jest",
+      "Netlify"
+    ],
+    category: ["Frontend"],
+    displayCategory: "E-Commerce",
+    role: "Frontend Developer",
+    duration: "2026",
+    features: [
+      "Premium fashion store homepage",
+      "Men's, women's, and kids' collections",
+      "New arrivals and sale pages",
+      "Product details and image gallery",
+      "Product size selection",
+      "Product description tabs",
+      "Related-product recommendations",
+      "Dynamic shopping cart",
+      "Add and remove cart items",
+      "Product quantity controls",
+      "Live cart total calculation",
+      "Global cart state using React Context API",
+      "Login and signup user interfaces",
+      "Breadcrumb navigation",
+      "Promotional banners and special offers",
+      "Popular product collections",
+      "Newsletter subscription interface",
+      "Responsive desktop, tablet, and mobile layouts",
+      "Single-page navigation with React Router DOM",
+      "Netlify deployment"
+    ],
+    highlights:
+      "Developed a premium, responsive fashion e-commerce frontend using React 19, reusable components, React Context API for shopping cart state management, and React Router DOM 7 for navigation. Created dedicated product collections, detailed product views, related-product suggestions, and a streamlined shopping experience.",
+    demo:
+      "https://6a7c59cde1ab519a17824495--fastidious-toffee-6b753f.netlify.app",
+    code:
+      "https://github.com/ImashaSamodee/VELORA-Luxury-Fashion-Lifestyle-Store.git"
   },
   {
     id: "wildhaven",
@@ -629,7 +693,7 @@ export const profileData = [
   {
     icon: FaCode,
     title: 'Core Stack',
-    technologies: ['Flutter & Dart', 'Java / Spring Boot', 'PHP & MySQL', 'React & Tailwind', 'PostgreSQL & Supabase']
+    technologies: ['React & Tailwind', 'Node.js & Express', 'Flutter & Dart', 'Java / Spring Boot', 'PHP & MySQL', 'PostgreSQL & Supabase']
   },
   {
     icon: FaSchool,

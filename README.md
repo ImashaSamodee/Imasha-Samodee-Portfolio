@@ -34,6 +34,7 @@ A modern, responsive, and high-performance personal developer portfolio built wi
 | **Food Ordering System** | `Frontend` | HTML5, CSS3, Font Awesome 6, Responsive Design | [View Repo](https://github.com/ImashaSamodee/FoodOrderingSystem.git) |
 | **Student Event Management** | `Fullstack` | PHP 8, MySQL, MariaDB, Apache, JavaScript | [View Repo](https://github.com/ImashaSamodee/event_management_system.git) |
 | **ITUM Library Management** | `Fullstack` | PHP 8, MySQL, Bootstrap 5.3, Apache, Bcrypt | [View Repo](https://github.com/ImashaSamodee/ITUM_Library_Management_System_Software.git) |
+| **VELORA Luxury Store** | `Frontend / E-Commerce` | React 19, Context API, React Router 7, Jest, Netlify | [View Repo](https://github.com/ImashaSamodee/VELORA-Luxury-Fashion-Lifestyle-Store.git) |
 
 ---
 
