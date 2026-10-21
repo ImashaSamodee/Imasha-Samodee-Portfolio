@@ -81,6 +81,9 @@ import project05 from "./project-05.png"
 import project06 from "./project-06.png"
 import project07 from "./project-07.png"
 import project08 from "./project-08.png"
+import project09 from "./project-09.png"
+import project10 from "./project-10.png"
+import project11 from "./project-11.png"
 
 export const assets = {
   profileImg,
@@ -212,6 +215,188 @@ export const skillsData = [
 export const projectCategories = ['Fullstack', 'Mobile', 'Game', 'Frontend']
 
 export const projectData = [
+  {
+    id: "story-magic",
+    title: "Story Magic – AI Bedtime Story Generator & Audio Storybook",
+    description:
+      "A full-stack AI-powered storytelling platform that creates personalized children's bedtime stories with magical characters, soothing audio narration, illustrated storybooks, and cloud-based story collections.",
+    longDescription:
+      "Story Magic is an interactive bedtime storytelling application designed to make children's bedtime routines creative and engaging. Children can choose a character, adventure theme, and magical location to generate personalized, age-appropriate stories using Google Gemini 2.5 Flash, with optional OpenAI and built-in algorithmic fallbacks. The application features browser-based text-to-speech narration, dynamic character illustrations, a searchable community story library, synchronized favorites, and a day-and-starlight night mode. Supabase PostgreSQL provides cloud persistence with Row-Level Security, while browser localStorage and fallback generation help the application remain usable when external services are unavailable. The frontend is built with React 19, Vite 8, and Tailwind CSS 4, supported by a Node.js and Express 5 REST API backend.",
+    image: project10,
+    tech: [
+      "React 19",
+      "JavaScript ES6+",
+      "Vite 8",
+      "Tailwind CSS 4",
+      "React Router v7",
+      "Node.js",
+      "Express.js 5",
+      "Google Gemini 2.5 Flash",
+      "Google Gen AI SDK",
+      "OpenAI SDK",
+      "Supabase",
+      "PostgreSQL",
+      "Row-Level Security (RLS)",
+      "REST API",
+      "Web Speech Synthesis API",
+      "HTML5",
+      "CSS3",
+      "localStorage",
+      "SVG",
+      "Oxlint"
+    ],
+    category: ["Fullstack"],
+    displayCategory: "AI-Powered Storytelling Platform",
+    role: "Full-Stack Developer",
+    duration: "2026",
+    features: [
+      "AI-generated personalized bedtime stories",
+      "Google Gemini 2.5 Flash integration",
+      "Optional OpenAI story-generation fallback",
+      "Built-in algorithmic story-generation fallback",
+      "Character selection with five story characters",
+      "Adventure theme and magical location selection",
+      "Browser-based text-to-speech narration",
+      "Audio playback and pause controls",
+      "Dynamic character illustrations",
+      "Community story library",
+      "Searchable story collections",
+      "Cloud-synchronized favorite stories",
+      "Supabase PostgreSQL database integration",
+      "Row-Level Security database policies",
+      "Day mode and starlight night mode",
+      "Responsive mobile and tablet-friendly interface",
+      "REST API for story generation and management",
+      "Story retrieval, favorite updates, and deletion",
+      "localStorage fallback for favorites",
+      "Graceful handling of unavailable AI or database services",
+      "Accessible, child-friendly visual design"
+    ],
+    highlights:
+      "Developed a full-stack AI storytelling platform integrating React 19, Node.js, Express 5, Google Gemini AI, and Supabase PostgreSQL. Implemented personalized story generation, resilient AI fallbacks, browser-based audio narration, story-library management, and synchronized favorites within a responsive, child-friendly experience.",
+    demo: "",
+    code: "https://github.com/ImashaSamodee/story-_app.git"
+  },
+  {
+    id: "guidelanka",
+    title: "GuideLanka – Smart Wildlife Safari Management System",
+    description:
+      "A full-stack wildlife safari management platform connecting tourists, safari drivers, and park authorities through live GPS tracking, wildlife sightings, safari bookings, and emergency alerts.",
+    longDescription:
+      "GuideLanka is a multi-platform wildlife safari management system designed to improve safari safety, wildlife conservation, and visitor experiences in Sri Lanka's national parks. It combines a React-based tourist portal, a park authority dashboard, a Flutter mobile application for safari drivers, and a Node.js and Express REST API. Key capabilities include real-time GIS tracking, wildlife sighting reports, safari bookings, driver verification, geofencing alerts, emergency SOS reporting, and Sightings-to-Route (S2R) optimization using wildlife sighting freshness, congestion, and road distance. Supabase PostgreSQL supports data storage and authentication workflows, while OneSignal, NotifyLK, and Nodemailer provide notification services.",
+    image: project11,
+    tech: [
+      "React 19",
+      "JavaScript ES6+",
+      "Vite",
+      "Tailwind CSS 4",
+      "React Router",
+      "Flutter",
+      "Dart",
+      "Node.js",
+      "Express.js 5",
+      "Supabase",
+      "PostgreSQL",
+      "JWT Authentication",
+      "bcryptjs",
+      "REST API",
+      "Leaflet",
+      "React-Leaflet",
+      "OpenStreetMap",
+      "GeoJSON",
+      "Geolocator",
+      "flutter_map",
+      "OneSignal",
+      "NotifyLK",
+      "Nodemailer",
+      "Vercel"
+    ],
+    category: ["Fullstack"],
+    displayCategory: "Wildlife Safari Management Platform",
+    role: "Full-Stack Developer",
+    duration: "2026",
+    features: [
+      "Tourist wildlife exploration portal",
+      "Verified safari driver directory",
+      "Safari booking management",
+      "Real-time wildlife sighting reports",
+      "Interactive GIS tracking dashboard",
+      "GPS-based safari driver tracking",
+      "Sightings-to-Route (S2R) optimization",
+      "Safari road navigation using GeoJSON",
+      "Geofencing safety alerts",
+      "Emergency SOS and incident reporting",
+      "Driver verification and compliance review",
+      "JWT-based role authentication",
+      "Role-based access control",
+      "SMS OTP verification",
+      "Push notifications and email alerts",
+      "Tourist-driver messaging",
+      "Safari availability and earnings management",
+      "Park activity and revenue analytics"
+    ],
+    highlights:
+      "Built a multi-platform safari management solution integrating React, Flutter, Node.js, Express, and Supabase. Combined GIS mapping, GPS tracking, wildlife sighting management, emergency response workflows, and S2R route optimization to support safer and more sustainable wildlife tourism.",
+    demo: "https://guide-lanka-backend.vercel.app",
+    code: "https://github.com/umindudinal/GuideLanka.git"
+  },
+  {
+    id: "wanderly-travel-website",
+    title: "Wanderly – Travel Planning & Exploration Website",
+    description:
+      "A modern, fully responsive travel planning website featuring destination discovery, travel services, interactive trip consultation, and an elegant travel-inspired user experience.",
+    longDescription:
+      "Wanderly is a responsive travel planning and exploration website designed to inspire travelers and simplify the process of planning their next journey. Built using semantic HTML5, modern CSS3, and Vanilla JavaScript ES6+, it features an immersive hero section, destination showcases, travel service cards, company information, a team section, and a guided four-step trip-planning process. Visitors can explore destinations such as Bali, the Swiss Alps, Kyoto, and Santorini, review travel services, and submit trip inquiries through a client-side validated consultation form. The website uses CSS Grid, Flexbox, container queries, and fluid typography to create adaptable layouts across mobile, tablet, and desktop screens. Accessibility features include keyboard navigation, focus management, descriptive image alternatives, reduced-motion support, and accessible form feedback. Smooth scrolling, active-section navigation, animated mobile navigation, and a nature-inspired emerald and mint color palette create a polished user experience.",
+    image: project09,
+    tech: [
+      "HTML5",
+      "CSS3",
+      "JavaScript ES6+",
+      "CSS Grid",
+      "Flexbox",
+      "CSS Container Queries",
+      "IntersectionObserver API",
+      "Responsive Web Design",
+      "WCAG 2.1 AA Accessibility",
+      "Google Fonts",
+      "SVG",
+      "Git",
+      "GitHub"
+    ],
+    category: ["Frontend"],
+    displayCategory: "Travel Planning Website",
+    role: "Frontend Developer",
+    duration: "2026",
+    features: [
+      "Responsive travel website landing page",
+      "Sticky navigation with frosted-glass styling",
+      "Animated off-canvas mobile navigation",
+      "Keyboard-accessible mobile menu and focus management",
+      "Hero section with travel-focused calls to action",
+      "Destination showcase for Bali, Swiss Alps, Kyoto, and Santorini",
+      "About section with company story and values",
+      "Team member showcase",
+      "Travel inspiration quote banner",
+      "Travel service cards for flights, hotels, tours, and planning",
+      "Four-step travel planning process",
+      "Trip consultation form with destination and date fields",
+      "Client-side form validation and accessible error feedback",
+      "Newsletter subscription interface",
+      "Responsive CSS Grid and Flexbox layouts",
+      "CSS container queries for adaptable destination cards",
+      "Fluid typography using clamp()",
+      "Scrollspy navigation using IntersectionObserver",
+      "Smooth scrolling and interactive micro-animations",
+      "Reduced-motion accessibility support",
+      "Semantic HTML and keyboard navigation",
+      "Responsive layouts from mobile to ultra-wide screens"
+    ],
+    highlights:
+      "Designed and developed a polished travel exploration website using semantic HTML5, modern CSS3, and Vanilla JavaScript. Applied mobile-first responsive design, CSS container queries, fluid typography, accessible navigation, and client-side form validation to deliver an engaging and accessible travel-planning experience.",
+    demo: "",
+    code:
+      "https://github.com/ImashaSamodee/Travel_planning_website.git"
+  },
   {
     id: "medicare-lk",
     title: "MediCare LK – AI-Powered E-Pharmacy & Prescription System",
